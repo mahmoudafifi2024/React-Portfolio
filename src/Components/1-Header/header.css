@@ -1,0 +1,178 @@
+/* 
+=======================
+Table of Contents
+=======================
+
+1.Header Design
+2.Button & Icon
+3.Model == PoP UP
+4.Responsive Design (media query)
+*/
+
+/* =======================
+      1.Header Design
+========================== */
+header.flex
+{
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+
+header.flex nav
+{
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  transition: 0.5s;
+  width: 40rem;
+}
+
+header.flex nav:hover
+{
+  box-shadow: 1px 1px 30px var(--blue);
+}
+
+header ul.flex
+{
+  gap: 7.4rem;
+}
+
+header ul li a
+{
+  cursor: pointer;
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: 0.2s ease-in;
+}
+header ul li a:hover
+{
+  cursor: pointer;
+  color: var(--blue);
+  opacity: 1;
+  
+}
+
+header button
+{
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+header button span.menu
+{
+  display: none;
+}
+/* =======================
+      2.Button & Icon
+========================== */
+header button .icon-menu, header button.mode
+{
+  color: var(--subtitle);
+  background-color: var(--bgHeader);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(244, 165 , 95 , 0.0);
+  transition: 0.3s ease;
+}
+header button .icon-menu:hover, header button.mode:hover
+{
+  color: var(--title);
+  border: 1px solid rgba(244, 165 , 95 , 0.249);
+  box-shadow: 0 0 50px rgba(244, 165 , 95 , 0.249) ;
+}
+
+header .icon-close
+{
+  font-size: 1.8rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+header .icon-close:hover
+{
+  color: crimson;
+  font-size: 1.8rem;
+  rotate: 180deg;
+}
+
+
+/* =======================
+      3.Model == PoP UP
+========================== */
+header .fixed
+{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(40, 40, 48, 0.91);
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+@keyframes Model {
+  0%  {scale: 0;}
+  60%  {scale: 1.1;}
+  100%  {scale: 1;}
+}
+header .fixed ul.model
+{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  transition: 0.5s;
+  animation: Model 0.7s 1;
+}
+header .fixed ul.model:hover
+{
+  box-shadow: 1px 1px 30px var(--blue);
+}
+
+header .fixed ul.model li:first-child
+{
+  padding: 30px 0 0 0;
+}
+header .fixed ul.model li:last-child
+{
+  padding: 0 0 30px 0;
+}
+
+header .fixed ul.model li.text-center
+{
+  text-align: right;
+  height: 10px;
+}
+header .fixed ul.model li a
+{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+/* ================================
+  4.Responsive Design (media query)
+=================================== */
+
+@media (max-width: 1120px) {
+  header nav
+  {
+    display: none;
+  }
+  
+  header button span.menu
+  {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}

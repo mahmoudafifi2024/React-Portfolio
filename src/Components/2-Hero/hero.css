@@ -1,0 +1,129 @@
+/* =======================
+      1.Left Section
+========================== */
+section.hero
+{
+  margin-top: 3rem;
+}
+
+
+section .left-section
+{
+  flex-grow:1 ;
+}
+
+section.hero .avatar
+{
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid orangered;
+  padding: 2px;
+}
+
+section.hero .icon-verified
+{
+  color: var(--blue);
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translate(-12px, 76px);
+}
+
+section.hero h1.title
+{
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--title);
+}
+section.hero p
+{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons
+{
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+/* Linked in */
+section.hero .all-icons .icon-linkedin
+{
+  transition: 0.2s;
+  cursor: pointer;
+}
+section.hero .all-icons .icon-linkedin:hover
+{
+  box-shadow: 0 0 30px 2px #0077B5;
+}
+
+/* Instagram */
+section.hero .all-icons .icon-instagram
+{
+  
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+section.hero .all-icons .icon-instagram:hover
+{
+  box-shadow: 0 0 30px 2px #E4405F;
+}
+
+/* Github */
+section.hero .all-icons a .icon-github
+{
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 5px solid black;
+  color:#fff;
+}
+.light section.hero .all-icons a .icon-github
+{
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: black;
+  border: 5px solid black;
+  color:#fff;
+}
+
+section.hero .all-icons a .icon-github:hover
+{
+  box-shadow: 0 0 30px 2px var(--subtitle) ;
+}
+
+/* X */
+section.hero .all-icons a .icon-x
+{
+  padding: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: black;
+  color: #fff;
+}
+
+section.hero .all-icons a .icon-x:hover
+{
+  box-shadow: 0 0 30px 2px black ;
+}
+
+
+/* =======================
+      2.Left Section(Animation)
+========================== */
+@media (max-width:1100px) {
+  .animation
+  {
+    display: none;
+  }
+}
+
+
+
+
